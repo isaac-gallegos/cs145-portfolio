@@ -15,7 +15,10 @@ class MyPortfolio {
      * to retrieve the name. It shoud return the collected string.
      */
 	static String getFirstName() {
-		return " ";
+        Scanner user_input = new Scanner(System.in);
+        System.out.print("PLease enter your first name: ");
+        String user_name = user_input.next();
+		return user_name;
 	}
 
 
@@ -24,7 +27,7 @@ class MyPortfolio {
      * the screen on one line.
      */	
 	static void printIntegerList(int[] values) {
-
+        System.out.print(values);
 	}
 
 
