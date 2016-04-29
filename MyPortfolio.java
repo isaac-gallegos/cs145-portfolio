@@ -36,7 +36,13 @@ class MyPortfolio {
      * ORDER to the screen on one line.
      */	
 	static void printIntegerListReversed(int[] values) {
-
+        int[] new_list;
+        int j = values.length;
+        for (int i = 0; i < values.length; i++) {
+            new_list[i] = values[j];
+            j = j - 1;
+        }
+        System.out.print(values);
 	}
 
     /**
