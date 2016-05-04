@@ -136,7 +136,11 @@ class MyPortfolio {
      * Accepts a String argument and returns the argument in reverse order.
      */	
 	static String reverseString(String chars) {
-
-		return "\nNot implemented yet!";
+        String s = "";
+        int j = chars.length() - 1;
+        for (int i = j; i >= 0; i--) {
+            s = s + chars.charAt(i);
+        }
+		return s;
 	}
 }
